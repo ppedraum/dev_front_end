@@ -1,0 +1,53 @@
+<html>
+
+    <head><title>Exemplo de formulário</title></head>
+    <body>
+        <form name = "Exemplo" method = "post" action = "">
+            <!--controles como botões, caixas de texto, etc.-->
+            <p align = "center">
+                <h2>Formulário de Contato: </h2>
+
+                Nome: <input type = "text" name = "nome" id = "nome" size = 20 maxlength = 50 required><br>
+                Data de nascimento: <input type="date" name="data" id="data" required><br>
+                Telefone: <input type = "text" name = "telefone" id = "telefone" size = 20 minlength = 15 maxlength = 15><br>
+                E-mail: <input type = "text" name = "email" id = "email" size = 20><br>
+                Senha: <input type = "password" name = "senha" id = "senha" size = 20><br>
+
+                <h4>CURSO SELECIONADO</h4>
+
+                <input type = "radio" name = "curso" id= "curso" value = "INF"> INFORMÁTICA
+                <input type = "radio" name = "curso" id= "curso" value = "MEC"> MECATRÔNICA
+                <input type = "radio" name = "curso" id= "curso" value = "ADM"> ADMINISTRAÇÃO
+
+                <h4>HOBBIES</h4>
+
+                <input type = "checkbox" name = "hobby" id = "hobby" value = "cachorro">CACHORRO
+
+                <h4>ESTADO</h4>
+
+                <select name = "estado " id = "estado">
+                    <option value = "SC">SANTA CATARINA</option>
+                    <option value = "SC">RIO GRANDE DO SUL</option>
+                    <option value = "SC">BAHIA</option>
+                    
+                </select>
+
+                <h4>SUGESTÕES</h4>
+                <textarea name = "sugestoes" id = "sugestoes" cols=30 rows=5>
+                    Deixe aqui suas sugestões...
+                </textarea>
+
+                <br><br>
+                <input type ="submit" name="enviar" id="enviar">
+                <input type ="reset" name="limpar" id="limpar">
+
+            </p>
+
+        </form>
+
+
+    </body>
+
+
+
+</html>
