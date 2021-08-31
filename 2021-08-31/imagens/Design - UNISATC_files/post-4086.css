@@ -1,0 +1,35 @@
+.elementor-4086 .elementor-element.elementor-element-1385563 .elementor-heading-title{color:#2F2F2F;font-size:29px;font-weight:900;letter-spacing:-2.1px;}#elementor-popup-modal-4086 .dialog-message{width:90vw;height:auto;padding:12px 12px 12px 12px;}#elementor-popup-modal-4086{justify-content:center;align-items:center;pointer-events:all;background-color:rgba(0,0,0,.8);}#elementor-popup-modal-4086 .dialog-close-button{display:block;}#elementor-popup-modal-4086 .dialog-widget-content{background-color:#E9E9E9;box-shadow:2px 8px 23px 3px rgba(0,0,0,0.2);}@media(max-width:1024px){.elementor-4086 .elementor-element.elementor-element-1385563 .elementor-heading-title{font-size:4em;}}@media(max-width:767px){.elementor-4086 .elementor-element.elementor-element-1385563 .elementor-heading-title{font-size:3em;}}/* Start custom CSS for shortcode, class: .elementor-element-cade152 */.docentes .wrapper {
+    display: inline-flex;
+    background: #fff;
+    float: left;
+    width: 23%;
+    margin: 11px;
+    height: 209px;
+}
+.docentes ul.informacoes-docente {
+    list-style: none;
+    padding: 10px;
+    border-left: 4px solid #a2d145;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.docentes li.nome-docente {
+    font-weight: 800;
+}
+@media screen and (max-width: 1287px){
+
+.docentes .wrapper{
+width: 31%;
+}
+}
+
+@media screen and (max-width: 768px){
+    .docentes .wrapper {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+}/* End custom CSS */
