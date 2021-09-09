@@ -51,17 +51,95 @@
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    Senha: <input type = "password" name = "senha" id = "senha" size = 25 required><br>
+                                    Telefone: <input type = "text" name = "telefone" id = "telefone" size = 17 minlength = 15 maxlength = 15 ><br>
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    Telefone: <input type = "text" name = "telefone" id = "telefone" size = 17 minlength = 15 maxlength = 15 required><br>
+                                    Tel. Residencial: <input type = "text" name = "telefone_res" id = "telefone_res" size = 17 minlength = 15 maxlength = 15 ><br>
+                                </font>
+                            </td>
+                        </tr>
+						<tr><td height = 25></td></tr>
+						<tr>
+                            <td>
+                                <font face = "Arial" size = 3>
+                                    Endereço: <input type = "text" name = "endereco" id = "endereco" size = 25 required><br>
+                                </font>
+                            </td>
+                            <td width = 20></td>
+                            <td>
+                                <font face = "Arial" size = 3>
+                                    Cidade: <input type = "text" name = "cidade" id = "cidade" size = 25 required><br>
                                 </font>
                             </td>
                         </tr>
                         <tr><td height = 25></td></tr>
+						<tr>
+                            <td>
+                                <font face = "Arial" size = 3>
+							Estado: <select name="estados">
+										<option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+										<option value="DF">Distrito Federal</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="GO">Goiás</option>
+										<option value="MA">Maranhão</option>
+										<option value="MT">Mato Grosso</option>
+										<option value="MS">Mato Grosso do Sul</option>
+										<option value="MG">Minas Gerais</option>
+										<option value="PA">Pará</option>
+										<option value="PB">Paraíba</option>
+										<option value="PR">Paraná</option>
+										<option value="PE">Pernambuco</option>
+										<option value="PI">Piauí</option>
+										<option value="RJ">Rio de Janeiro</option>
+										<option value="RN">Rio Grande do Norte</option>
+										<option value="RS">Rio Grande do Sul</option>
+										<option value="RO">Rondônia</option>
+										<option value="RR">Roraima</option>
+										<option value="SC">Santa Catarina</option>
+										<option value="SP">São Paulo</option>
+										<option value="SE">Sergipe</option>
+										<option value="TO">Tocantins</option>
+									</select>
+                                </font>
+                            </td>
+                            <td width = 20></td>
+                            <td>
+                                <font face = "Arial" size = 3>
+                                    CEP: <input type = "text" name = "cep" id = "cep" size = 9 maxlength = 15 required><br>
+                                </font>
+                            </td>
+                        </tr>
+                        <tr><td height = 25></td></tr>
+						<tr>
+                            <td>
+                                <font face = "Arial" size = 3>
+                                    Data de nasc.: <input type = "date" name = "data_nasc" id = "data_nasc" required><br>
+                                </font>
+                            </td>
+                            <td width = 20></td>
+                            <td>
+                                <font face = "Arial" size = 3>
+							  Sexo: <select name="sexo">
+										<option value="MSC">Masculino</option>
+										<option value="FEM">Feminino</option>
+										<option value="OUT">Outro</option>
+
+									</select>
+                                </font>
+                            </td>
+                        </tr>
+                        <tr><td height = 25></td></tr>
+
+					</table>
+					<table>
                         <tr>
                             <td>
                                 <font face = "swis721 blk bt" size = 5 color = "#038705">
@@ -73,13 +151,13 @@
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MCT">Mecatrônica 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MCT">Mecatrônica 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MTM">Multimídia 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MTM">Multimídia 
                                 </font>
                             </td>
 
@@ -87,39 +165,39 @@
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "FAM">Fabricação Mecânica(Vespertino) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "FAM">Fabricação Mecânica(Vespertino) 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "ELMN">Eletromecânica(Noturno) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "ELMN">Eletromecânica(Noturno) 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "ELMV">Eletromecânica(Vespertino) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "ELMV">Eletromecânica(Vespertino) 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MECN">Mecânica(Noturno) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MECN">Mecânica(Noturno) 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MIE">Mineração EaD 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MIE">Mineração EaD 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "ELTN">Eletrotécnica(Noturno)
+                                    <input type = "radio" name = "curso" id= "curso" value = "ELTN">Eletrotécnica(Noturno)
                                 </font>
                             </td>
 
@@ -127,76 +205,99 @@
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "ADM">Administração 
+                                    <input type = "radio" name = "curso" id= "curso" value = "ADM">Administração 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MCT">Mecatrônica 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MCT">Mecatrônica 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "ELTV">Eletrotécnica(Vespertino) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "ELTV">Eletrotécnica(Vespertino) 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "QMC">Química 
+                                    <input type = "radio" name = "curso" id= "curso" value = "QMC">Química 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "INF">Informática 
+                                    <input type = "radio" name = "curso" id= "curso" value = "INF">Informática 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MAUV">Manutenção Automotiva(Vespertino) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MAUV">Manutenção Automotiva(Vespertino) 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MECV">Mecânica(Vespertino) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MECV">Mecânica(Vespertino) 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MCT">Fabricação Mecânica(Noturno) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MCT">Fabricação Mecânica(Noturno) 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "ELE">Eletrônica 
+                                    <input type = "radio" name = "curso" id= "curso" value = "ELE">Eletrônica 
                                 </font>
                             </td>
                             <td width = 20></td>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "MAUN">Manutenção Automotiva(Noturno) 
+                                    <input type = "radio" name = "curso" id= "curso" value = "MAUN">Manutenção Automotiva(Noturno) 
                                 </font>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <font face = "Arial" size = 3>
-                                    <input type = "checkbox" name = "curso" id= "curso" value = "DEG">Design Gráfico 
+                                    <input type = "radio" name = "curso" id= "curso" value = "DEG">Design Gráfico 
                                 </font>
                             </td>
                         </tr>
+                        <tr><td height = 25></td></tr>
                     </table>
+					<table>
+						<tr>
+							<td>
+								<font face = "Arial" size = 3>
+					 Fase do curso: <select name ="fase_curso">
+										<option value="PRI">Primeira Fase</option>
+										<option value="SEG">Segunda Fase</option>
+										<option value="TER">Terceira Fase</option>
+										<option value="QUA">Quarta Fase</option>
+									</select>
+								</font>
+				 
+							</td>
+							<td width = 20></td>
+							<td>
+								<font face = "Arial" size = 3>
+                                    Data de matrícula: <input type = "date" name = "data_matr" id = "data_matr" required><br>
+								</font>
+							</td>
+						</tr>
+                        <tr><td height = 25></td></tr>
+					</table>
                     <table>
                         <tr>
                             <td>
