@@ -1,0 +1,22 @@
+
+#menu{
+    width: 70%;
+    height: 20%;
+    background-color: #2b84d8;
+    text-align: center;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+
+#conteudo{
+    width: 70%;
+    height: 80%;
+    background-color: #6bb5fa;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+
+}
