@@ -1,13 +1,33 @@
 
 
 	#menu {
-		background-position:center;
 		text-align: center;
-		background-color:black;
-		width:600px;
+		background-position:center;
+		background-color:rgb(142, 101, 255);
+		margin-left: auto;
+		margin-right: auto;
+		padding-left:100px;
+		padding-right:100px;
 		height:200px;
 		
 	}
+	#corpo{
+		background-color: rgb(169, 138, 255);
+		margin-right: auto;
+		margin-left: auto;
+		height:880px;
+		padding-top: 50px;
+	}
+	.titulo{
+		text-align: left;
+		font-family: "Script MT";
+		font-weight: bold;
+		font-size: 40px;
+	}
+	.barra{
+		bottom: 200px;
+	}
+
 	body{
 		margin-right: auto;
 		margin-left: auto;
