@@ -1,22 +1,58 @@
+@font-face {
+    font-family: 'Draxel';
+    src: url('fonts/Draxel.ttf') format('truetype');
+  }
 
 #menu{
-    width: 70%;
-    height: 20%;
-    background-color: #2b84d8;
-    text-align: center;
-    position:relative;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0;
-}
-
-#conteudo{
-    width: 70%;
-    height: 80%;
-    background-color: #6bb5fa;
+    width: 1280;
+    height: 326;
+    background-image: url('index/index_menu.png');
     position: relative;
     margin-left: auto;
     margin-right: auto;
     border: 0;
+}
+#rodape{
+    width: 1280;
+    height: 324;
+    background-image: url('index/index_rodape.png');
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    font-family: 'Draxel';
+    font-size: 30px;
+    text-align: justify;
+    color: #205b7a;
+}
+
+#conteudo{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    text-align: center;
+    font-family: 'Draxel';
+    font-size: 30px;
+    color: #205b7a;
+
+}
+
+.texto{
+    text-align: justify;
+    text-indent: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#fundo{
+    width: 1280;
+    height:fit-content;
+    background-color: #e8a64f;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 
 }
