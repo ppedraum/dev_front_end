@@ -1,0 +1,19 @@
+Rascunho do Form:
+nome
+e-mail
+fone (residencial/celular)
+cidade
+estado
+
+reservas
+evento: aniversário, formatura, casamento
+data e horário do evento
+nº de pessoas
+textarea: O que você vai querer?
+
+submit/reset
+
+links de hoje:
+https://www.w3schools.com/css/css_form.asp
+https://www.horadecodar.com.br/2020/02/10/como-posicionar-uma-div-do-lado-de-outra-css/
+https://www.w3schools.com/cssref/sel_hover.asp

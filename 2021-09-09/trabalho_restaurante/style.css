@@ -40,12 +40,63 @@
 
 }
 
+.side_div{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .texto{
     text-align: justify;
     text-indent: 10%;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+form{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input[type=text], select{
+    font-family: 'Draxel';
+    font-size: 30px;
+    color: #631755;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: #205b7a;
+    font-family: 'Draxel';
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 172.5px;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #11455e;
+    font-family: 'Draxel';
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 172.5;
+}
+
+
 
 #fundo{
     width: 1280;
