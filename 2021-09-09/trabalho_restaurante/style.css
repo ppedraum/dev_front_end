@@ -40,7 +40,7 @@
 
 }
 
-.side_div{
+#side_div{
     display: inline-block;
     margin-left: 50px;
     margin-right: 50px;
@@ -49,8 +49,9 @@
 .texto{
     text-align: justify;
     text-indent: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+}
+.realce{
+    color: #631755;
 }
 
 form{
