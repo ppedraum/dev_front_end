@@ -1,0 +1,10 @@
+menu -> logo
+
+Conteúdo ->
+foto de comida
+Informações sobre a padaria
+Ambiente
+Localização
+
+rodapé ->
+contato

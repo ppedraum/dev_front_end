@@ -46,6 +46,26 @@
     margin-right: 50px;
 }
 
+#fotos{
+    position:relative;
+    text-align:left;
+    font-family: 'Draxel';
+    font-size: 25px;
+    color: #631755;
+    width:auto;
+    height:auto;
+    margin:50px;
+    display: inline-block;
+}
+#malha{
+    margin-left:auto;
+    margin-right:auto;
+    background-image: url('index/comidinhas-malha.png');
+    background-repeat: no-repeat;
+    width: 1204;
+    height:67;
+}
+
 .texto{
     text-align: justify;
     text-indent: 10%;
