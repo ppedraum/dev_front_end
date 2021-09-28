@@ -12,6 +12,52 @@
     margin-right: auto;
     border: 0;
 }
+
+#img_bt_inicio{
+    width:272px;
+    height:130px;
+    background-image: url('index/index_bt_inicio.png');
+    position:absolute;
+    background-repeat: no-repeat;
+}
+#img_bt_inicio:hover{
+    width:272px;
+    height:130px;
+    background-image: url('index/index_bt_inicio_hover.png');
+    position:absolute;
+    background-repeat: no-repeat;
+}
+
+#img_bt_cardapio{
+    width:232px;
+    height:142px;
+    background-image: url('index/index_bt_cardapio.png');
+    position:absolute;
+    background-repeat: no-repeat;
+}
+#img_bt_cardapio:hover{
+    width:232px;
+    height:142px;
+    background-image: url('index/index_bt_cardapio_hover.png');
+    position:absolute;
+    background-repeat: no-repeat;
+}
+
+#img_bt_cadastro{
+    width:272px;
+    height:130px;
+    background-image: url('index/index_bt_cadastro.png');
+    position:absolute;
+    background-repeat: no-repeat;
+}
+#img_bt_cadastro:hover{
+    width:272px;
+    height:130px;
+    background-image: url('index/index_bt_cadastro_hover.png');
+    position:absolute;
+    background-repeat: no-repeat;
+}
+
 #rodape{
     width: 1280;
     height: 324;
@@ -80,7 +126,7 @@ form{
     margin-right: 10%;
 }
 
-input[type=text], select{
+.in_text{
     font-family: 'Draxel';
     font-size: 30px;
     color: #631755;
@@ -92,7 +138,7 @@ input[type=text], select{
     outline: none;
 }
 
-input[type=submit], input[type=reset]{
+.botao{
     background-color: #205b7a;
     font-family: 'Draxel';
     font-size: 30px;
@@ -104,7 +150,7 @@ input[type=submit], input[type=reset]{
     margin-bottom: 10px;
     width: 172.5px;
 }
-input[type=submit]:hover, input[type=reset]:hover{
+.botao:hover{
     background-color: #11455e;
     font-family: 'Draxel';
     font-size: 30px;
@@ -116,7 +162,6 @@ input[type=submit]:hover, input[type=reset]:hover{
     margin-bottom: 10px;
     width: 172.5;
 }
-
 
 
 #fundo{

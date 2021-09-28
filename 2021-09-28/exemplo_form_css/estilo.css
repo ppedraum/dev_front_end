@@ -1,0 +1,90 @@
+#formulario {
+    width: 550px;
+    padding: 10px;
+    background: #f0f0f0;
+    overflow: auto;
+
+    /* Border style */
+    border: 1px solid #cccccc;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+
+    /* Border Shadow */
+    -moz-box-shadow: 2px 2px 2px #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+
+    }
+
+label {
+    font-family: Verdana;
+    font-size: 15px;
+    text-align: right;
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    line-height: 30<p align="left"></p>px;
+    }
+
+.input {
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid #b9bdc1;
+    width: 350px;
+    color: #797979;
+    }
+
+.radio {
+    font-family: Arial, Verdana;
+    font-size: 10px;
+    padding: 5px;
+    color: #797979;
+    }
+    
+.input_textarea {
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid #b9bdc1;
+    width: 350px;
+    height: 100px;
+    color: #797979;
+    }
+    
+#campo :hover  {
+    position: absolute;
+    display: block;
+    margin: -30px 0 0 455px;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    background: rgba(0, 0, 0, 0.6);
+
+        /* Border campo */
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+
+.button{
+    float: right;
+    margin:10px 20px 10px 0;
+    font-weight: bold;
+    padding: 8px 8px;
+    color: #fff;
+    text-align: center;
+
+    /* Background botão */
+    background: #a5b8da;
+    background: -moz-linear-gradient (top, #a5b8da 0%, #7089b3 100%);
+    background: -webkit-gradient (linear, 0% 0%, 0% 100%, from(#a5b8da), to(#7089b3));
+
+    /* Border botão */
+    border: 2px solid #5c6f91;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    }
+
