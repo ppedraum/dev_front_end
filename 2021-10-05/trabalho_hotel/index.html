@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Teste OnePage Scrolling</title>
+        <style>
+            *{margin:0;padding:0;}
+
+            #menu{
+                position:fixed;
+                margin-top:20px;
+                width:100vw;
+                height:30px;
+                /*configs gerais do menu*/
+            }
+            #menu label{
+                text-align:center;
+                padding-left:75;
+                padding-right:75;
+                padding-top:20;
+                padding-bottom:20;
+                transition:all .4s;
+                font-size:150%;
+                /*Estilização de cada label*/
+            }
+            #menu label:hover{
+                background-color: rgba(0,0,0,.2)
+            }
+            .seccao{
+                width:100vw;
+                height:100vh;
+                align-items:center;
+                display:flex;
+                /*configs gerais das secções*/
+            }
+            .seccoes input[type=radio]{
+                display:none;
+            }
+
+            #inicio{
+                background-color: #ff8500;
+            }
+
+            #qualidades{
+
+            }
+            #contato{
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <nav id="menu">
+            <img src="imgs/logo.png" style="width:15vw;height:15vh">
+            <label for="rd_inicio">Início</label>
+            <label for="rd_qualidades">Nossas Qualidades</label>
+            <label for="rd_contato">Contatos</label>
+        </nav>
+        
+        <section class="seccoes">
+            <input type="radio" name="scroll" id="rd_inicio" checked>
+            <input type="radio" name="scroll" id="rd_qualidades">
+            <input type="radio" name="scroll" id="rd_contato">
+
+            <section class="seccao" id="inicio">
+
+            </section>
+            <section class="seccao" id="qualidades">
+
+            </section>
+            <section class="seccao" id="contato">
+
+            </section>
+        </section>
+
+    </body>
+</html>
