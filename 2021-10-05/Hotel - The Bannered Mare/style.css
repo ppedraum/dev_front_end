@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image:url("imgs/pattern.png");
+    background-repeat: repeat;
+}
+
+#menu{
+    background-image:url("imgs/Menu.png");
+    background-repeat: no-repeat;
+    width:100vw
+    height:253px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#side_div{
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-bottom: 5vh;
+    display:inline-block;
+}
+#conteudo{
+    margin:10vh;
+    width:1277px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:'Perpetua';
+    color: black;
+    font-size:30
+
+}
+h1{
+    font-family:'GothicI';
+    color: black;
+    font-weight: bold;
+    text-indent:10px;
+}
+.text{
+    text-indent:10px;
+}
+.img{
+    display:inline;
+}

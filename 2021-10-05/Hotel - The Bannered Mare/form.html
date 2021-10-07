@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>The Bannered Mare</title>
+        <meta charset=utf-8>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="menu">
+            <img src="imgs/banner.png">
+        </div>
+        <div id="conteudo">
+            <h1>Reserva</h1>
+            <form name="reserva">
+                <div id="side_div">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id ="nome" name="nome"><br>
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id ="endereco" name="endereco"><br>
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id ="cidade" name="cidade"><br>
+                    <label for="Estado">Estado:</label><br>
+                    <input type="text" id ="estado" name="estado"><br>
+                </div>
+                <div id="side_div">
+                    <label for="CEP">CEP:</label><br>
+                    <input type="CEP" id ="CEP" name="CEP"><br>
+                    sexo:<br>
+                    <input type="radio" id="masc" name="sexo" value="masculino">
+                    <label for="masc">Masculino</label><br>
+                    <input type="radio" id="fem" name="sexo" value="feminino">
+                    <label for="fem">Feminino</label><br>
+                    <input type="radio" id="outro" name="sexo" value="outro">
+                    <label for="outro">Outro</label>
+
+                </div>
+                <div id="side_div">
+                    Viajando a:<br>
+                    <input type="radio" id="trab" name="rd_trabalho" value="trabalho">
+                    <label for="masc">Trabalho</label><br>
+                    <input type="radio" id="lzr" name="rd_lazer" value="lazer">
+                    <label for="fem">Lazer</label><br>
+                    <input type="radio" id="std" name="estudos" value="estudos">
+                    <label for="std">Estudos</label>
+                </div>
+                <div id="side_div">
+                    <label for="dt_checkin">Data de check-in</label><br>
+                    <input type="date" id="dt_checkin" name="dt_checkin"><br>
+                    <label for="dt_checkout">Data de check-out</label><br>
+                    <input type="date" id="dt_checkout" name="dt_checkout"><br>
+                </div>
+                <div id="side_div">
+                    Tipo de Quarto:<br>
+                    <input type="checkbox" id="simples" name="simples" value="simples">
+                    <label for="simples">simples</label><br>
+                    <input type="checkbox" id="duplo" name="duplo" value="duplo">
+                    <label for="duplo">duplo</label><br>
+                    <input type="checkbox" id="triplo" name="triplo" value="triplo">
+                    <label for="triplo">triplo</label>
+                </div>
+            </form>
+        </div>
+    </body>
