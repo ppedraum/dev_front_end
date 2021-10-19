@@ -1,5 +1,6 @@
 	<html>
 	<head>
+		<script type="text/javascript" src="script.js"></script>
 		<title>Cadastro - Nuvenzinha Doce :-)</title>
 		<link rel ="stylesheet" href="style.css" type="text/css">
 	</head>
@@ -17,14 +18,14 @@
 				<form>
 					<strong>Cadastro - Nuvenzinha Doce</strong><br><br>
 					<div id="side_div">
-						Nome: <br><input type = "text" name = "nome" id = "nome" class = "in_text" size = 25 maxlength = 50 required><br>
-						E-mail: <br><input type = "text" name = "nome" id = "nome" class = "in_text" size = 25 maxlength = 50 required><br>
-						Telefone: <br><input type = "text" name = "nome" id = "nome" class = "in_text" size = 25 maxlength = 15 required><br>
+						Nome: <br><input type = "text" name = "nome" id = "txt_nome" class = "in_text" size = 25 maxlength = 50 required><br>
+						E-mail: <br><input type = "text" name = "email" id = "txt_email" class = "in_text" size = 25 maxlength = 50 required><br>
+						Telefone: <br><input type = "text" name = "telefone" id = "txt_telefone" class = "in_text" onkeypress="mask(this,'## #####.####')" size = 25 maxlength = 13 required><br>
 					</div>
 					<div id="side_div">
-						Cidade: <br><input type = "text" name = "nome" id = "nome" class = "in_text" size = 25 maxlength = 50 required><br>
+						Cidade: <br><input type = "text" name = "cidade" id = "txt_cidade" class = "in_text" size = 25 maxlength = 50 required><br>
 						Estado: <br>
-						<select name="estados" class = "in_text">
+						<select name="estados" class = "in_text" id="sel_estados">
 							<option value="AC">Acre</option>
 							<option value="AL">Alagoas</option>
 							<option value="AP">Amapá</option>
@@ -53,8 +54,8 @@
 							<option value="SE">Sergipe</option>
 							<option value="TO">Tocantins</option>
 						</select><br>
-						<input type="submit" name="enviar" id="enviar" class = "botao">
-						<input type="reset" name="resetar" id="resetar" class = "botao">
+						<input type="submit" name="enviar" id="bt_submit" onclick="saveAllValues()" class = "botao">
+						<input type="reset" name="resetar" id="bt_reset" class = "botao">
 
 					</div>
 
@@ -79,8 +80,6 @@
 				</div>
 			</div>
 		</div>
-	
-	
 	</body>
 
 
