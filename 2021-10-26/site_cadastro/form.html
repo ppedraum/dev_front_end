@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <form name="cadastro" action="post">
+        <h1>Formulário</h1>
+        <label>Matricúla</label>
+        <input type="text" name="matricula" id="matricula" size=10><br>
+
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome" size=10><br>
+
+        <label>Endereço</label>
+        <input type="text" name="endereco" id="endereco" size=10><br>
+
+        <label>Cidade</label>
+        <input type="text" name="cidade" id="cidade" size=10><br>
+
+        <label>Estado</label>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+        </select><br>
+
+        <label>CEP</label>
+        <input type="text" name="cep" id="cep" onkeypress="mask(this, '#####-##')" maxlength=8 size=10><br>
+
+        <label>Telefone</label>
+        <input type="text" name="telefone" id="telefone" onkeypress="mask(this, '## #####-####')" maxlength="13" size=10><br>
+        <input type="button" id="bt_enviar" onclick="enviar()" value="Enviar"><br>
+        <label id="validacao"></label>
+    </form>
+</body>
+</html>

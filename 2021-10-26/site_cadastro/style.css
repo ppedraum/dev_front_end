@@ -1,0 +1,11 @@
+html{
+    margin:0 0;
+    padding: 0 0;
+}
+body{
+    text-align: left;
+}
+form{
+    width:30vw;
+    text-align: right;
+}
