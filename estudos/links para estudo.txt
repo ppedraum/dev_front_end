@@ -1,0 +1,7 @@
+flexbox: https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=Cj0KCQjwwY-LBhD6ARIsACvT72M077fQYzZ46GTgj_jgMn6K2159oBj01_s_W69Dfp0Sjs2k3rcvcvgaArOfEALw_wcB
+
+span vs. div: https://blog.hubspot.com/website/span-vs-div
+<form> -> method: https://www.w3schools.com/tags/att_form_method.asp
+<form> -> action: https://www.w3schools.com/tags/att_form_action.asp
+<meta>: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+<input>: https://www.w3schools.com/tags/tag_input.asp

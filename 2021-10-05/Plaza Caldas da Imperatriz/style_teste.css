@@ -1,0 +1,35 @@
+html{padding: 0;margin: 0;}
+main{
+    text-align: center;
+}
+form{
+    display: block;
+}
+.form_div{
+    text-align:right;
+    display: inline-block;
+    vertical-align: text-top;
+    margin:0 0;
+    padding: 0 5vw;
+    padding-bottom: 30px;
+    background-color: rgba(95, 158, 160, 0.521);
+    border-style: none;
+    font-family: 'verdana';
+}
+.h1_main{
+    margin:0 0;
+    padding:20 0;
+}
+.h2_main{
+    margin:0 0;
+    padding:10 0;
+}
+.form_div input{
+    margin:5 0;
+    
+}
+.form_div input[type='text']{
+    padding:2.5 0;
+    width:200;
+    height:30;
+}

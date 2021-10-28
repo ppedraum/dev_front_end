@@ -1,10 +1,8 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Cadastro - Plaza Resort & Spa Caldas da Imperatriz</title>
         <meta charset=utf-8>
+        <title>Form Teste</title>
         <link rel="stylesheet" href="style.css">
-
     </head>
     <body>
         <nav>
@@ -16,148 +14,76 @@
                 <li><a href="index.html#section_3">Reservas</a></li>
             </ul>
         </nav>
-        <div id="conteudo">
-            <form name="form_reservas">
-                <!--- 
-                Dados do Hóspede:
-    Nome  (text)
-    Endereço  (text)
-    Cidade (text)                   Estado (select)             
-    CEP (text)                         Sexo (radio)
-    Fone (text)                       E-mail (text)
-
-    Dados da Hospedagem:
-    Viajando a: (radio – trabalho/lazer/estudo)
-    Data check-in: (select– dia/mês/ano)            Hora check-in: (select – hora/minutos)
-    Data check-out: (select – dia/mês/ano)        Hora check-out: (select – hora/minutos)
-    Tipo Quarto: (checkbox  – individual/duplo/triplo)
-    Número de Pessoas: Adultos (select – 1/2/3)          Crianças: (select – 1/2/3)
-    Serviços Inclusos: (checkbox – café manhã/almoço/jantar)
-
-    Botões (Enviar e Limpar)
-                -->
-                <div class="form" style="padding-top:20vh;">Reservas - Plaza Caldas da Imperatriz</div><br>
-                <div class="side_div">
-                    <div class="form">
-                        Dados do Hóspede<br><br><br>
-                        <label for="txt_nome">Nome</label><br>
-                        <input type="text" name="nome" id="txt_nome" required><br>
-                        <label for="txt_endereco">Endereço</label><br>
-                        <input type="text" name="endereco" id="txt_endereco" required><br>
-                        <label for="txt_cidade">Cidade</label><br>
-                        <input type="text" name="cidade" id="txt_cidade" required><br>
-                        <label for="sel_estados">Estado</label><br>
-                        <select name="estados" id ="sel_estados">
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
-                    </div>
-                    <div class="form">
-                        <label for="txt_cep">CEP</label><br>
-                        <input type="text" name="cep" id="txt_cep" required><br>
-                        <label for="rd_sexo">Sexo</label><br>
-                        <div id="rd_sexo">
-                            <input type="radio" name="rd_sexo_masc" value="Masculino">
-                            <label for="rd_sexo_masc">Masculino</label><br>
-                            <input type="radio" name="rd_sexo_fem" value="Feminino">
-                            <label for="rd_sexo_fem">Feminino</label><br>
-                            <input type="radio" name="rd_sexo_outro" value="Outro">
-                            <label for="rd_sexo_outro">Outro</label><br>
-                        </div>
-                        <label for="txt_email">E-Mail</label><br>
-                        <input type="text" name="email" id="txt_email" required><br>
-                        <label for="txt_email">Telefone para Contato</label><br>
-                        <input type="text" name="fone" id="txt_fone"><br>
-
-                    </div>
+        <main>
+            <form method="get">
+                <div class="form_div" id="form_hospedes">
+                    <h1 class="h1_main">Dados do Responsável</h1>
+                    <label for="txt_nome">Nome:</label>
+                    <input type="text" id="txt_nome"><br>
+                    <section>
+                        <h2 class="h2_main">Sexo</h2>
+                        <label for="rd_masc">Masculino</label>
+                        <input type="radio" id="rd_masc" value="Masculino" name="rd_sexos"><br>
+                        <label for="rd_fem">Feminino</label>
+                        <input type="radio" id="rd_fem" value="Feminino" name="rd_sexos"><br>
+                        <label for="rd_outro">Outro</label>
+                        <input type="radio" id="rd_outro" value="Outro" name="rd_sexos"><br>
+                    </section>
+                    <label for="txt_endereco">Endereço:</label>
+                    <input type="text" id="txt_endereco"><br>
+                    <label for="txt_cidade">Cidade:</label>
+                    <input type="text" id="txt_cidade"><br>
+                    <label for="txt_estado">Estado:</label>
+                    <input type="text" id="txt_estado"><br>
+                    <label for="txt_cep">CEP:</label>
+                    <input type="text" id="txt_cep"><br>
+                    <label for="txt_fone">Fone:</label>
+                    <input type="text" id="txt_fone"><br>
+                    <label for="txt_email">E-Mail:</label>
+                    <input type="text" id="txt_email"><br>
                 </div>
-                <div class="side_div">
-                    <div class="form">
-                        Dados da Hospedagem<br><br>
-                        <label for="rd_dado_viagem">Viajando a</label><br>
-                        <div id="rd_dado_viagem">
-                            <input type="radio" name="rd_dado_trabalho" value="Trabalho">
-                            <label for="rd_dado_trabalho">Trabalho</label><br>
-                            <input type="radio" name="rd_dado_estudos" value="Estudos">
-                            <label for="rd_dado_estudos">Estudos</label><br>
-                            <input type="radio" name="rd_dado_lazer" value="Lazer" checked>
-                            <label for="rd_dado_lazer">Lazer</label><br>
-                        </div>
-                        <label for="dt_checkin">Data de Check-In</label><br>
-                        <input type="date" name="data_checkin" id="dt_checkin" required><br>
-                        <label for="hr_checkin">Hora de Check-In</label><br>
-                        <input type="time" name="hora_checkin" id="hr_checkin" required><br>
-                        <label for="dt_checkin">Data de Check-Out</label><br>
-                        <input type="date" name="data_checkout" id="dt_checkout" required><br>
-                        <label for="hr_checkout">Hora de Check-Out</label><br>
-                        <input type="time" name="hora_checkout" id="hr_checkin" required><br>
-                    </div>
-                    <div class="form">
-                        <label for="cb_quarto">Tipo de Quarto:</label><br>
-                        <div id="cb_quarto">
-                            <input type="checkbox" name="cb_quarto_simples" value="Simples">
-                            <label for="cb_quarto_simples">Simples</label><br>
-                            <input type="checkbox" name="cb_quarto_duplo" value="Duplo">
-                            <label for="cb_quarto_duplo">Duplo</label><br>
-                            <input type="checkbox" name="cb_quarto_triplo" value="Triplo">
-                            <label for="cb_quarto_triplo">Triplo</label><br>
-                        </div>
-                        <label for="cb_quarto">Número de pessoas</label><br>
-                        <select name="qtd_pessoas" id="sel_qtd_pessoas">
-                            <option value="1">1 pessoa</option>
-                            <option value="2">2 pessoas</option>
-                            <option value="3">3 pessoas</option>
-                            <option value="4">4 pessoas</option>
-                            <option value="5">5 pessoas</option>
-                            <option value="6+">6+ pessoas</option>
-                        </select><br>
-                        <label for="cb_servicos">Serviços Inclusos</label><br>
-                        <div id="rd_servicos">
-                            <input type="checkbox" name="cb_servicos_infantil" value="Programa Infantil">
-                            <label for="cb_servicos_infantil">Programa Infantil</label><br>
-                            <input type="checkbox" name="cb_servicos_VIP" value="Programa VIP">
-                            <label for="cb_servicos_VIP">Programação VIP</label><br>
-                            <input type="checkbox" name="cb_servicos_refeicoes" value="Refeições Inclusas">
-                            <label for="cb_servicos_refeicoes">Refeições Inclusas</label><br>
-                        </div>
-                    </div>
+                <div class="form_div" id="form_hospedagem">
+                    <h1 class="h1_main">Dados da Hospedagem</h1>
+                    <section>
+                        <h2 class="h2_main">Viajando a</h2>
+                        <label for="ch_trabalho">Trabalho</label>
+                        <input type="checkbox" id="ch_trabalho" value="Trabalho" name="ch_motivo_viagem"><br>
+                        <label for="ch_estudo">Estudo</label>
+                        <input type="checkbox" id="ch_estudo" value="Estudo" name="ch_motivo_viagem"><br>
+                        <label for="ch_lazer">Lazer</label>
+                        <input type="checkbox" id="ch_lazer" value="Lazer" name="ch_motivo_viagem"><br>
+                        <label for="ch_outro">Outro</label>
+                        <input type="checkbox" id="ch_outro" value="Outro" name="ch_motivo_viagem"><br>
+                        <textarea id="txa_motivo_outro">Especifique seu propósito para a viagem (caso outro):</textarea><br>
+                    </section>
+                    <label for="dt_checkin">Data de Check-in</label>
+                    <input type="date" id="dt_checkin"><br>
+                    <label for="dt_checkin">Data de Check-out</label>
+                    <input type="date" id="dt_checkout"><br>
+                    <section>
+                        <h2 class="h2_main">Tipo de Quarto</h2>
+                        <label for="ch_unico">Único</label>
+                        <input type="checkbox" id="ch_unico" value="Único" name="ch_tipo_quarto"><br>
+                        <label for="ch_duplo">Duplo</label>
+                        <input type="checkbox" id="ch_duplo" value="Duplo" name="ch_tipo_quarto"><br>
+                        <label for="ch_familia">Tamanho Família</label>
+                        <input type="checkbox" id="ch_familia" value="Tamanho Família" name="ch_tipo_quarto"><br>
+                    </section>
+                    <label for="sel_npessoas">Número de Pessoas:</label>
+                    <select id="sel_npessoas">
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="3">3 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="5+">5 Pessoas ou mais</option>
+                    </select>
                 </div>
-                <div class="div">
-                    <input type="submit" name="enviar" id="enviar">
-					<input type="reset" name="resetar" id="resetar">
+                <br>
+                <div class="sub_res_div">
+                    <input type="submit" id="bt_submit">
+                    <input type="reset" id="bt_reset">
                 </div>
             </form>
-            <div class="rodape">
-                Site desenvolvido por ppedraum <br>
-				Linguagens usadas: HTML/CSS <br>
-				Github: ppedraum <br>
-				2021-10-08
-            </div>
-        </div>
+        </main>
     </body>
 </html>
