@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('fonts/Maximum\ Impact.ttf') format('truetype');
+  }
+
+*{
+    margin:0 0;
+    padding:0 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Impact';
+    font-size: large;
+}
+
+#menu ul{
+    display: table; 
+    width: 100vw;
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+}
+#menu li{
+    display:inline-block;
+    list-style-type:none;
+    line-height: 30px;
+    padding: 10px 10px;
+    font-family: Arial;
+    font-size: large;
+    color: white;
+}
+
+main{
+    font-size: 30px;
+    text-align: left;
+}
