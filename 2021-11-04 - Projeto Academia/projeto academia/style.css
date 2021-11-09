@@ -12,11 +12,13 @@ body{
     text-align: center;
     font-family: 'Impact';
     font-size: large;
+    background-color: rgb(29, 29, 29);
+    color: white;
 }
 
 #menu ul{
     display: table; 
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     background-color: black;
     text-align: center;
@@ -24,14 +26,47 @@ body{
 #menu li{
     display:inline-block;
     list-style-type:none;
-    line-height: 30px;
+    vertical-align: middle;
     padding: 10px 10px;
-    font-family: Arial;
+    font-family: 'Impact';
     font-size: large;
-    color: white;
+    letter-spacing: 0.1vw;
+    
+}
+#menu a{
+    color:white;
+    text-decoration: none;
 }
 
 main{
     font-size: 30px;
     text-align: left;
+    width: 100%;
+    height: 100vh;
+}
+.idx_main{
+    background-image: url(fotos/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.txt_img_left{
+    padding:5vh 0;
+    background-color: rgba(29, 29, 29, 0.788);
+    margin-bottom: 5vh;
+}
+.txt_img_right{
+    padding:5vh 0;
+    text-align: right;
+    background-color: rgba(29, 29, 29, 0.788);
+    margin-bottom: 5vh;
+}
+
+h1{
+    margin-bottom: 5vh;
+    font-size: 50px;
+}
+
+#dvSlider{
+    width:30vw;
+    height:50vh;
 }
