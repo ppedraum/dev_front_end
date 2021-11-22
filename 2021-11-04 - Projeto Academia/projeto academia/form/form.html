@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <a href="#form_header"><button id="botao_topo">
+        ^
+    </button></a>
+    <header id="form_header">
+        <img src="fotos/APEO_logo.png" alt="logo" id="logo_hd">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sct_apeo">APEO</a></li>
+                <li><a href="#">Modalidades</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="form.hmtl">INSCRIÇÕES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main_form">
+        <p class="txt_over_img">Inscrições</p>
+    </main>
+    <form method="post" id="form_inscricao" class="sct_form">
+        <div class="form_area">
+            <label>Nome:</label><input type="text" id="txt_nome">
+            <label>E-Mail:</label><input type="text" id="txt_email">
+            <label>Cidade:</label><input type="text" id="txt_cidade">
+            Estado
+            <label>Telefone:</label><input type="text" id="txt_fone"><br>
+        </div>
+        <div id="form_area">
+            Modalidade:
+            Horário:
+            <label>Peso:</label><input type="text" id="txt_peso">
+            <label>Altura:</label><input type="text" id="txt_altura">
+        </div>
+        <div class="form_area">
+            <input type="submit" id="bt_submit">
+            <input type="reset" id="bt_reset">
+        </div>
+    </form>
+</body>
+</html>

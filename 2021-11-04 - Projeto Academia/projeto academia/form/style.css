@@ -1,0 +1,161 @@
+html{scroll-behavior: smooth;}
+*{margin:0;padding:0;}
+
+body{
+    font-family: 'Eras ITC';
+}
+#botao_topo{
+    position: fixed;
+    bottom:2vw;
+    right:2vw;
+    width:40px;
+    height:40px;
+    background-color: rgba(74, 85, 136, 0.347);
+    color:rgba(74, 85, 136, 1);
+    font-size: 30px;
+    border-style: solid;
+    border-color: rgba(74, 85, 136, 0.600);
+    border-radius: 2px;
+    display: hidden;
+}
+
+a{
+    text-decoration: none;
+    color:rgba(74, 85, 136, 1)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 10vw;
+}
+.menu li{
+    display: inline-block;
+    padding: 2vw;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#logo_hd{
+    width:8vw;
+}
+
+#main_idx, #main_blog, #main_modal{
+    display: flex;
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:130vh;
+}
+#main_idx{
+    background-image: url(fotos/main_banner.png);
+    height:130vh;
+}
+#main_blog{
+    background-image: url(fotos/blog_banner.png);
+}
+#main_modal{
+    background-image: url(fotos/modal_banner.png);
+}
+
+.txt_over_img{
+    background: linear-gradient(90deg, rgba(74, 85, 136, 0.842), rgba(255,255,255,0));
+    width:90vw;
+    padding: 5vh 2vw;
+    font-weight: 600;
+    font-size:70px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 600;
+    padding: 5vh 2vw;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5vh 2vw;
+}
+
+.sct_txt{
+    font-size: 20px;
+    text-align: left;
+    width: 30vw;
+    padding: 0 5vw;
+}
+
+#lista_equipe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    align-items: center;
+    padding:5vw;
+    
+}
+.item_lista_equipe{
+    width: 15vw;
+    text-align: center;
+    font-size: 20px;
+}
+.foto_lista_equipe{
+    width: 15vw;
+}
+
+#lista_modalidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#blog_area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    align-items: flex-start;
+    padding:5vw;
+}
+.item_blog{
+    padding:4vh 1vw;
+    background-color: rgba(74, 85, 136, 0.342);
+    border-style: double;
+    border-color: rgba(74, 85, 136, 0.247);
+    width: 22vw;
+    text-align: left;
+    font-size: 20px;
+}
+.foto_blog{
+    padding-bottom:1vw;
+    margin:auto;
+    width:20vw;
+    display:block;
+}
+
+#lista_modal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    align-items: flex-start;
+    padding:5vw;
+}
+.item_lista_modal{
+
+}
+.foto_lista_modal{
+    padding-bottom:1vw;
+    margin:auto;
+    width:0;
+    display:block;
+}
+
+.sct_form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    align-items: flex-start;
+    padding:5vw;
+}
