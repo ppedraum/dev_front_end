@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <a href="#form_header"><button id="botao_topo">
+        ^
+    </button></a>
+    <header id="form_header">
+        <img src="fotos/APEO_logo.png" alt="logo" id="logo_hd">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sct_apeo">APEO</a></li>
+                <li><a href="#">Modalidades</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="form.html">INSCRIÇÕES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main_form">
+        <p class="txt_over_img">Inscrições</p>
+    </main>
+    <p class="free_txt">
+        Aqui você poderá se inscrever, caso queira, em um de nossos programas de treinamento.
+        Não se preocupe: A academia, mesmo voltada ao quesito olímpico, aceita novos membros
+        sem distinção. É válido lembrar, porém, que o participante deverá ter o mínimo de experiência
+        em uma das modalidades, e porte físico propício.
+    </p>
+    
+    <form method="post" id="form_inscricao" class="sct_form">
+        <div class="form_area">
+            <label for="txt_nome">Nome:</label><input type="text" id="txt_nome" required> <br>
+            <label for="txt_email">E-Mail:</label><input type="text" id="txt_email" required>
+            <label for="txt_cidade">Cidade:</label><input type="text" id="txt_cidade" required>
+            <label for="sel_estado">Estado:</label>
+            <select id="sel_estado" name="estado" required>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+            <label for="txt_telefone">Telefone:</label><input type="text" id="txt_fone" onkeypress="mask(this,'## #####-####')" maxlength=13><br>
+        </div>
+        
+        <div class="form_area">
+            <label for="sel_modalidades">Modalidades:</label>
+            <select name="modalidades" id="sel_modalidades">
+                <option value="heavy_lifting">Heavy-Lifting</option>
+                <option value="ginastica_olimpica">Ginástica Olímpica</option>
+                <option value="corrida">Corrida</option>
+                <option value="maratona">Maratona</option>
+            </select>
+            <label for="tm_horario">Horário: </label> 
+            <input type="time" id="tm_horario" required><br>
+            <label>Peso: </label><input type="text" id="txt_peso" maxlength=5 required>Kg <br>
+            <label>Altura: </label><input type="text" id="txt_altura" maxlength=5 required>Cm <br>
+        </div>
+        <div id="form_area" class="sb_rs_area">
+            <input type="submit" id="bt_submit" onclick="redirect('index.html')">
+            <input type="reset" id="bt_reset">
+        </div>
+    </form>
+</body>
+</html>
