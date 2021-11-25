@@ -112,6 +112,10 @@ h2{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.sct_txt, .sct_txt_post{
+>>>>>>> parent of c96df2c (Update style.css)
 .sct_txt{
 =======
 .sct_txt, .sct_txt_post{
@@ -189,6 +193,9 @@ h2{
     justify-content: space-evenly;    
     align-items: flex-start;
     padding:5vw;
+}
+.item_lista_modal{
+
 }
 .foto_lista_modal{
     padding-bottom:1vw;
