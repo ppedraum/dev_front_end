@@ -23,36 +23,25 @@ startList = function()
 }
 window.onload=startList;
 
-var slides=new Array("equipe/Cleo.JFIF","equipe/Dennis.JFIF","equipe/Mark.JFIF");
-var tam=slides.length;
-var satual=1;
-var tmpSlider;
-
-function trocaAutomatica(){
-	satual++;
-	if(satual >= tam){
-		satual=0;
-	}
-  document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
+function mask(t, mask)
+{
+       var i = t.value.length;
+       var exit = mask.substring(1,0);
+       var text = mask.substring(i)
+     if (text.substring(0,1) != exit)
+     {
+       t.value += text.substring(0,1);
+     }
 }
 
-function iniciaSlider(){
-	document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
-	tmpSlider=setInterval(trocaAutomatica,3000);
-}
-
-function parar(){
-	clearInterval(tmpSlider);
-}
-
-function troca(dir){
-	satual+=dir;
-	if(satual < 0){
-		satual=2;
-	}else if(satual >= tam){
-		satual=0;
-	}
-	document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
-	clearInterval(tmpSlider);
-	tmpSlider=setInterval(trocaAutomatica,3000);
+function redirect(linkTo){
+  var lastTime = Date.now();
+  alert("Cadastro concluído com sucesso!");
+  while(true){
+    var curTime = Date.now();
+    if(curTime-lastTime==3000){
+      window.location.href = linkTo;
+      break;
+    }
+  }
 }
