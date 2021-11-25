@@ -43,19 +43,21 @@ header{
     width:8vw;
 }
 
-#main_idx, #main_blog, #main_modal{
+#main_idx{
     display: flex;
     flex-direction: column-reverse;
+    background-image: url(fotos/main_banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     height:130vh;
 }
-#main_idx{
-    background-image: url(fotos/main_banner.png);
-    height:130vh;
-}
 #main_blog{
+    display: flex;
+    flex-direction: column-reverse;
     background-image: url(fotos/blog_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:600px;
 }
 #main_modal{
     display: flex;
@@ -64,7 +66,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height:600px;
-    background-image: url(fotos/modal_banner.png);
 }
 
 .txt_over_img{
@@ -110,7 +111,11 @@ h2{
     padding:0 1vw;
 }
 
+<<<<<<< HEAD
 .sct_txt{
+=======
+.sct_txt, .sct_txt_post{
+>>>>>>> parent of 4b4e1df (Merge branch 'main' of https://github.com/ppedraum/dev_front_end)
     font-size: 23px;
 =======
 .sct_txt{
@@ -127,11 +132,6 @@ h2{
 }
 #sct_modal .sct_txt{
     padding:0 0;
-.free_txt{
-    font-size: 23px;
-    text-align: left;
-    width: 60vw;
-    padding: 3vh 5vw;
 }
 =======
 >>>>>>> parent of eb76d5b (projeto academia - toques finais)
@@ -209,6 +209,7 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     color: rgba(0,0,0,0.5);
     text-align: center;
+<<<<<<< HEAD
 .sct_form{
     display: flex;
     flex-flow: column wrap;
@@ -254,3 +255,6 @@ input[type='submit'], input[type='reset']{
 }
 =======
 >>>>>>> parent of eb76d5b (projeto academia - toques finais)
+=======
+}
+>>>>>>> parent of 4b4e1df (Merge branch 'main' of https://github.com/ppedraum/dev_front_end)
