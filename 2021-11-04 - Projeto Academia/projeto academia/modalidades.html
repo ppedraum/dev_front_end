@@ -7,13 +7,16 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <header>
-        <img src="fotos/APEO_logo.png" alt="logo" id="logo_hd">
+    <a href="#modal_header"><button id="botao_topo">
+        ^
+    </button></a>
+    <header id="modal_header">
+        <img src="fotos/APEO_logo.png" alt="logo" class="logo">
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#sct_apeo">APEO</a></li>
-                <li><a href="#">Modalidades</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
                 <li><a href="blog.html">BLOG</a></li>
             </ul>
         </nav>
@@ -22,25 +25,52 @@
         <p class="txt_over_img">Modalidades</p>
     </main>
 
-    <div id="lista_modal">
+    <div id="sct_modal">
         <div class="item_lista_modal">
             <h2>Heavy Lifting</h2>
-            <img src="" alt="" class="foto_lista_modal">
+            <img src="fotos/modalidades/heavy_lifting.png" alt="" class="foto_lista_modal">
+            <p class="sct_txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quia fugiat molestiae consequuntur hic debitis non porro aut magni culpa vitae,
+                eaque distinctio voluptas minima a assumenda incidunt aliquam dolor dolore.
+            </p>
         </div>
         <div class="item_lista_modal">
             <h2>Ginástica Olímpica</h2>
-            <img src="" alt="">
-        <div class="item_lista_modal" class="foto_lista_modal">
-            <h2>Corrida (100m, 200m, 500m)</h2>
-            <img src="" alt="">   
-            
+            <img src="fotos/modalidades/ginastica_olimpica.png" alt="ginástica olímpica" class="foto_lista_modal">
+            <p class="sct_txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quia fugiat molestiae consequuntur hic debitis non porro aut magni culpa vitae,
+                eaque distinctio voluptas minima a assumenda incidunt aliquam dolor dolore.
+            </p>
         </div>
-        <div class="item_lista_modal" class="foto_lista_modal">
+        <div class="item_lista_modal">
+            <h2>Corrida (100m, 200m, 500m)</h2>
+            <img src="fotos/modalidades/corrida.png" alt="" class="foto_lista_modal">
+            <p class="sct_txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quia fugiat molestiae consequuntur hic debitis non porro aut magni culpa vitae,
+                eaque distinctio voluptas minima a assumenda incidunt aliquam dolor dolore.
+            </p>
+        </div>
+        <div class="item_lista_modal">
             <h2>Maratona (42km)</h2>
-            <img src="" alt="">   
-            
+            <img src="fotos/modalidades/maratona.png" alt="" class="foto_lista_modal">
+            <p class="sct_txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quia fugiat molestiae consequuntur hic debitis non porro aut magni culpa vitae,
+                eaque distinctio voluptas minima a assumenda incidunt aliquam dolor dolore.
+            </p>
         </div>
     </div>
-
+    <footer>
+        <p id="info_footer">
+        Site created by ppedraum<br>
+        Languages used: HTML, CSS, javascript<br>
+        Certificate in Informatics<br> 
+        2021
+        </p>
+        <img src="fotos/APEO_logo.png" alt="" class="logo">
+    </footer>
 </body>
 </html>

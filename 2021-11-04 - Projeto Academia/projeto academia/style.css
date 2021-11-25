@@ -39,7 +39,7 @@ header{
     color: black;
     font-size: 20px;
 }
-#logo_hd{
+.logo{
     width:8vw;
 }
 
@@ -62,11 +62,15 @@ header{
 #main_modal{
     display: flex;
     flex-direction: column-reverse;
-    background-image: url(fotos/modal_banner.png);
+    background-image: url(fotos/modal_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height:600px;
 }
+.main_blog_post{
+    padding-bottom: 5vh;
+}
+
 
 .txt_over_img{
     background: linear-gradient(90deg, rgba(74, 85, 136, 0.842), rgba(255,255,255,0));
@@ -74,6 +78,16 @@ header{
     padding: 5vh 2vw;
     font-weight: 600;
     font-size:70px;
+}
+.main_blog_post .txt_over_img{
+    width: 45vw;
+    font-size:25px;
+    padding: 2vh 5vw;
+    
+}
+
+.foto_post_owner{
+    width:100px;
 }
 
 h1{
@@ -87,11 +101,41 @@ h2{
     padding: 5vh 2vw;
 }
 
-.sct_txt{
-    font-size: 20px;
+#sct_setores{
+    padding-bottom: 3vh;
+}
+
+#sct_modal h2{
+    padding:5vh 0;
+}
+
+.sct_post{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5vh;
+}
+.propriedades_post{
+    display: flex;
+    align-items:flex-end;
+    padding: 0vh 3vw;
+    padding-bottom: 2vh;
+}
+.info_post{
+    padding:0 1vw;
+}
+
+.sct_txt, .sct_txt_post{
+    font-size: 23px;
     text-align: left;
     width: 30vw;
     padding: 0 5vw;
+}
+.sct_txt_post{
+    width: 40vw;
+    padding: 1vh 5vw;
+}
+#sct_modal .sct_txt{
+    padding:0 0;
 }
 
 #lista_equipe{
@@ -111,7 +155,7 @@ h2{
     width: 15vw;
 }
 
-#lista_modalidades{
+#lista_setores{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -140,8 +184,11 @@ h2{
     width:20vw;
     display:block;
 }
+.foto_post{
+    padding: 2vh 5vw;
+}
 
-#lista_modal{
+#sct_modal{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;    
@@ -153,7 +200,19 @@ h2{
 }
 .foto_lista_modal{
     padding-bottom:1vw;
-    margin:auto;
-    width:0;
     display:block;
+    width:562px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 10vw;
+}
+
+#info_footer{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
 }
