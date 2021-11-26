@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Academia</title>
+    <title>Academia - APEO</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     
 </head>
-<body>
+<body id='body_idx'>
     <a href="#idx_header"><button id="botao_topo">
         ^
     </button></a>
     <header id="idx_header">
-        <img src="fotos/APEO_logo.png" alt="logo" id="logo_hd">
+        <img src="fotos/APEO_logo.png" alt="logo" class="logo">
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#sct_apeo">APEO</a></li>
-                <li><a href="#">Modalidades</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
                 <li><a href="blog.html">BLOG</a></li>
+                <li><a href="form.html">INSCRIÇÕES</a></li>
             </ul>
         </nav>
     </header>
+    <script>coresAleatorias('idx_header');</script>
     <main id="main_idx">
         <p class="txt_over_img">Bem vindo à APEO!</p>
     </main>
@@ -73,9 +75,9 @@
 
         </div>
     </section>
-    <section id="sct_modalidades">
+    <section id="sct_setores">
         <h1>Esportes e Setores</h1>
-        <div id="lista_modalidades">
+        <div id="lista_setores">
             <div class="sct_frag_txt">
                 <h2>Musculação</h2>
                 <p class="sct_txt">
@@ -117,13 +119,19 @@
                 <h2>Informações</h2>
                 <p class="sct_txt">
                     Para informação adicional sobre os esportes abrangidos na academia,
-                    <a href="#">clique aqui</a>.
+                    <a href="modalidades.html ">clique aqui</a>.
                 </p>
             </div>
         </div>
     </section>
     <footer>
-
+        <p id="info_footer">
+        Site created by ppedraum<br>
+        Languages used: HTML, CSS, javascript<br>
+        Certificate in Informatics<br> 
+        2021
+        </p>
+        <img src="fotos/APEO_logo.png" alt="" class="logo">
     </footer>
 </body>
 </html>

@@ -23,36 +23,37 @@ startList = function()
 }
 window.onload=startList;
 
-var slides=new Array("equipe/Cleo.JFIF","equipe/Dennis.JFIF","equipe/Mark.JFIF");
-var tam=slides.length;
-var satual=1;
-var tmpSlider;
-
-function trocaAutomatica(){
-	satual++;
-	if(satual >= tam){
-		satual=0;
-	}
-  document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
+function mask(t, mask)
+{
+       var i = t.value.length;
+       var exit = mask.substring(1,0);
+       var text = mask.substring(i)
+     if (text.substring(0,1) != exit)
+     {
+       t.value += text.substring(0,1);
+     }
 }
 
-function iniciaSlider(){
-	document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
-	tmpSlider=setInterval(trocaAutomatica,3000);
+function redirect(linkTo){
+  var lastTime = Date.now();
+  alert("Cadastro concluído com sucesso!");
+  while(true){
+    var curTime = Date.now();
+    if(curTime-lastTime==3000){
+      window.location.href = linkTo;
+      break;
+    }
+  }
 }
 
-function parar(){
-	clearInterval(tmpSlider);
+
+var bgColors=['rgba(0, 133, 199, 0.2)','rgba(244, 195, 0, 0.2)','rgba(0, 0, 0, 0.2)','rgba(0, 159, 61, 0.2)','rgba(223, 0, 36, 0.2)'];
+function getRandomNum(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function troca(dir){
-	satual+=dir;
-	if(satual < 0){
-		satual=2;
-	}else if(satual >= tam){
-		satual=0;
-	}
-	document.getElementById("dvSlider").style.backgroundImage="url('"+slides[satual]+"')";
-	clearInterval(tmpSlider);
-	tmpSlider=setInterval(trocaAutomatica,3000);
+function coresAleatorias(id){
+  document.getElementById(id).style.backgroundColor=bgColors[getRandomNum(0,5)];
 }
